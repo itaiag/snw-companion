@@ -6,7 +6,7 @@ import Link from '@mui/material/Link';
 
 const HomeView: React.FC = () => {
   return (
-    <Box className='main-box'>
+    <Box className='main-box main-view'>
       <Typography variant='h5'  mt={2}>על האתר</Typography>
 
       <Divider />
