@@ -49,7 +49,7 @@ export default function MagicTableView({ type }: { type: string }) {
                     >
                         <MenuItem value={1}>עוצמה ראשונה</MenuItem>
                         <MenuItem value={2}>עוצמה שנייה</MenuItem>
-                        <MenuItem value={3}>עוצמה שלישית</MenuItem>                        
+                        {type !== "כוהן" && <MenuItem value={3}>עוצמה שלישית</MenuItem>}                       
                     </Select>
                 </FormControl>
             </Box>
