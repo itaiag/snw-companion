@@ -7,6 +7,7 @@ import MeleeRangedTable from './RangedWeaponTable/RangedWeaponTable'
 
 import { Divider, Typography } from '@mui/material';
 import ArmorTable from './ArmorTable/ArmorTable';
+import GeneralItemsTable from './GeneralItemData/GeneralItemsTable';
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -49,22 +50,28 @@ export default function TabbedItemsView() {
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-          <Tab label="נשק פנים אל פנים" {...a11yProps(0)} />
-          <Tab label="נשק קליעים" {...a11yProps(1)} />
-          <Tab label="שריונות" {...a11yProps(2)} />       
+          <Tab label="ציוד" {...a11yProps(0)} />
+          <Tab label='נשק קפא"פ' {...a11yProps(1)} />
+          <Tab label="קליעים" {...a11yProps(2)} />
+          <Tab label="שריונות" {...a11yProps(3)} />       
         </Tabs>
       </Box>
-      <CustomTabPanel value={value} index={0}>
+      <CustomTabPanel value={value} index={0}>        
+      <Typography variant='h5'>ציוד כללי</Typography>
+        <Divider />
+        <GeneralItemsTable />
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={1}>        
       <Typography variant='h5'>כלי נשק פנים אל פנים</Typography>
         <Divider />
         <MeleeWeaponTable />
       </CustomTabPanel>
-      <CustomTabPanel value={value} index={1}>
-        <Typography variant='h5'>נשק קליעים</Typography>
+      <CustomTabPanel value={value} index={2}>
+        <Typography variant='h5'>נשקי קליעים</Typography>
         <Divider />
         <MeleeRangedTable/>
       </CustomTabPanel>
-      <CustomTabPanel value={value} index={2}>
+      <CustomTabPanel value={value} index={3}>
         <Typography variant='h5'>שריונות</Typography>
         <Divider />
         <ArmorTable/>
