@@ -10,7 +10,7 @@ const HomeView: React.FC = () => {
       <Divider />
       <Typography>
         <Box mt={2} component={"span"} display={"block"}>
-         ברוכים הבאים לאתר כלי עזר עבור מנחות של המשחק
+         ברוכים הבאים לאתר נושא הכלים עבור מנחות של המשחק
          &nbsp;
         <Link href='https://swordsandwizardry.co.il/'>חרבות וכשפים</Link>
         .
