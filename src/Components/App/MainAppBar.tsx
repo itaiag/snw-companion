@@ -24,7 +24,7 @@ interface Props {
 }
 
 const drawerWidth = 240;
-const navItems = ['בית','מפלצות','קסמים', 'אוצר','ציוד', 'קוביות','אודות'];
+const navItems = ['בית', 'מפלצות', 'קסמים', 'אוצר', 'ציוד', 'גלגולי הצלה', 'קוביות', 'אודות'];
 
 export default function DrawerAppBar(props: Props) {
     const { window } = props;
@@ -52,16 +52,19 @@ export default function DrawerAppBar(props: Props) {
                 break;
             case 'ציוד':
                 navigate('/items');
-                break;    
+                break;
+            case 'גלגולי הצלה':
+                navigate('/savingThrows');
+                break;
             case 'קוביות':
                 navigate('/roller');
-                break;    
+                break;
             case 'אודות':
                 navigate('/about');
                 break;
             default:
                 break;
-        }        
+        }
     };
 
 

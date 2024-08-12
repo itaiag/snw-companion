@@ -10,6 +10,7 @@ import TabbedMagicView from '../Magic/TabbedMagicView';
 import MagicView from '../Magic/MagicView/MagicView';
 import DiceRollerView from '../DiceRoller/DiceRollerView';
 import TabbedItemsView from '../Items/TabbedItemsView';
+import SavingThrowsView from '../SavingThrows/SavingThrowsView/SavingThrowsView';
 
 
 
@@ -30,6 +31,7 @@ class App extends React.Component {
                         <Route path="/magic" element={<MagicView />} />
                         <Route path="/about" element={<AboutView />} />
                         <Route path="/roller" element={<DiceRollerView />} />
+                        <Route path="/savingThrows" element={<SavingThrowsView />} />
                     </Routes>
                 </div>
             </Router>
