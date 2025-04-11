@@ -24,3 +24,8 @@ To run the application in your local environment run the following command:
 
 > npm start
 
+### Deploying to Firebase
+
+> npm run build
+> firebase deploy
+
