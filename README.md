@@ -13,3 +13,14 @@ For more information about the Hebrew Swords and Wizardly TTRPG game, visit the 
 - **Dice Roller**: Roll various dice.
 
 The website is optimized for mobile devices and can also be installed as an WPA application.
+
+## Development
+
+Follow theses steps for developing the application
+
+### Running the application locally
+
+To run the application in your local environment run the following command:
+
+> npm start
+
