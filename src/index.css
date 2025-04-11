@@ -49,6 +49,12 @@ code {
     height: auto; /* Adjust if necessary */
   }
 
+  .small-image-box {
+    width: 70%;
+    align-items: center;
+
+  }
+
 }
 
 
