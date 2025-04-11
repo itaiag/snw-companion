@@ -31,7 +31,7 @@ export default function BattleView() {
             <Typography>• <b>אחיזת נשק בשתי ידיים</b> מקנה +1 לנזק (חוץ מנשק דו־ידני) – לוחם בלבד.</Typography>
             <Typography>• <b>אחיזת שני כלי נשק</b> (אחד בכל יד) מקנה +1 לגלגול ההתקפה – לוחם בלבד.</Typography>
             <Typography>• <b>התקפה מאחור </b>
-                 מעניקה +2 לגלגול ההתקפה (+4 לגנב).</Typography>
+                מעניקה +2 לגלגול ההתקפה (+4 לגנב).</Typography>
             <Typography>• ירי על אויב המשתתף בקפא"פ גורם למחסר -2 לגלגול ההתקפה. כשלון עלול לפגוע בדמות אקראית.</Typography>
             <Typography>• תנועה בקפא"פ – כל יצור בגודל אנושי חוסם אזור ברוחב 1.5 מטר. לא ניתן לעבור דרכו. אויב שמנסה לעשות זאת – הדמות המשתתפת בקרב זוכה בהתקפה חופשית. אם היא פוגעת, התקדמות האויב נעצרת.</Typography>
             <Typography>• התקפה נגד אויב בלתי נראה (חושך מוחלט, חול בעיניים, לחש/שיקוי היעלמות) נעשית עם מחסר -4.</Typography>
@@ -40,10 +40,10 @@ export default function BattleView() {
             <Typography>• לחימה ללא נשק גורמת 1 נזק + תוספי כוח. יש 50% סיכוי שהנזק ייחשב כנזק הכנעה.</Typography>
             <Typography>• מחסה ותנאי שטח מעניקים תוספים או מחסרים (1–2, לעיתים עד 4) לגלגול ההתקפה.</Typography>
             <Typography>• תקיפת דמות שרועה: בקפא"פ – +2 לגלגול התקפה, בטווח – -2.</Typography>
-            
-                <Box className="small-image-box">
+
+            <Box className="small-image-box">
                 <img className="image" src={`${process.env.PUBLIC_URL}/images/battle.png`} alt="battle" />
-                </Box>
+            </Box>
         </Box>
     );
 }
