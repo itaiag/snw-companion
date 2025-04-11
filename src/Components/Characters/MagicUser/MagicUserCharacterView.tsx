@@ -14,6 +14,9 @@ export default function MagicUserCharacterView() {
             <Box component={"span"} display={"block"}>
                 <Typography>הקוסם הוא טיפוס מסתורי וחוקר המסתורין בעצמו, אדם המשוקע בידע עתיק ומופלא. כקוסם השקעת שעות ארוכות במחקר לתוך הלילה, לאור נרות, קורא במגילות עתיקות ובכפתבים מכוסי קורי עכביש, משנן את מעגלי הקסם והרונות, לומד אודות חשיבותם המוזרה של הכוכבים והירחים, נחשף לתיאוריות מטרידות של פילוסופים מטורפים, ומעל הכול, מפתח את היכולת להטיל לחשי קסם</Typography>
             </Box>
+            <Box className="small-image-box">
+                <img className="image" src={`${process.env.PUBLIC_URL}/images/magicUser.png`} alt="magic user" />
+            </Box>
             <Typography variant='h6' sx={{ p: 3 }}>תכונות דמות</Typography>
             <CharacterTable characterClass={characterType} />
             <Typography variant='h6' sx={{ p: 3 }}>טבלת התקדמות</Typography>
