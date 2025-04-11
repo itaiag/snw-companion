@@ -5,14 +5,14 @@ import CharacterTable from '../CharactersTable';
 
 
 
-export default function DwarfCharacterView() {
+export default function HalfingBardCharacterView() {
     
-    const characterType: string = 'גמד שומר-מעוז';
+    const characterType: string = 'בן-מחצית פייטן';
 
     return (
         <Box className='main-box'>
             <Box component={"span"} display={"block"}>
-                <Typography>הגמדים הם גזע קשוח וקשה עורף של כורי זהב ומתכות. גובהם נמוך - כמטר ושלושים סנטימטרים - והם המתהדרים בזקנים ארוכים ושופעים, אותם הם קולעים לתמות בסגנונות שונים המעידים על השיוך השבטי שלהם</Typography>
+                 <Typography></Typography>
             </Box>
             <Typography variant='h6' sx={{ p: 3 }}>תכונות דמות</Typography>
             <CharacterTable characterClass={characterType} />

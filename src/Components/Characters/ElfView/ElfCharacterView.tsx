@@ -12,7 +12,7 @@ export default function ElfCharacterView() {
     return (
         <Box className='main-box'>
             <Box component={"span"} display={"block"}>
-                <Typography> </Typography>
+                <Typography>האלפים הם גזע אצילי של שוכני היערות העתיקים. הם גבוהים, בעלי שיער ארוך בצבע זהוב, כסוף או שחור ועיניהם כחולות, חומות או ירוקות. גזרתם דקה יותר משל בני האדם, אוזניהם מחודדות ואין להם שיער פנים. תוחלת חייהם גבוהה מאוד, יותר מאלף שנים כפי הנראה, אך על פי רוב הם נוטשים את עולם בני התמותה לאחר כמה מאות שנים אל עולם מסתורי השמור רק לבני גזעם.</Typography>
             </Box>
             <Typography variant='h6' sx={{ p: 3 }}>תכונות דמות</Typography>
             <CharacterTable characterClass={characterType} />

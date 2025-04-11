@@ -13,7 +13,7 @@ export default function TrackerHalfingCharacterView() {
     return (
         <Box className='main-box'>
             <Box component={"span"} display={"block"}>
-                <Typography> </Typography>
+                <Typography>בני המחצית הם גזע נינוח של כפריים שוכני גבעות. גובהם נמוך, מעט פחות ממטר אחד, כפות רגליהם שעירות והם אינם נועלים דבר לרגליהם שכן עור כף רגלם עבה ומשמש אותם כתחליף לנעליים. תוחלת חייהם ארוכה מזו של בני האדם, אך לא מתקרבת לזו של הגמדים או האלפים, ועומדת על כמאה ועשרים שנים.</Typography>
             </Box>
             <Typography variant='h6' sx={{ p: 3 }}>תכונות דמות</Typography>
             <CharacterTable characterClass={characterType} />

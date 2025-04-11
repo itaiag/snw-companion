@@ -7,9 +7,14 @@ import { Divider, Typography } from '@mui/material';
 import ClericCharacterView from './ClericView/ClericCharacterView';
 import FighterCharacterView from './FighterView/FighterCharacterView';
 import MagicUserCharacterView from './MagicUser/MagicUserCharacterView';
-import ElfCharacterView from './ElfView/FighterCharacterView';
+import ElfCharacterView from './ElfView/ElfCharacterView';
 import TrackerHalfingCharacterView from './TrackerHalfing/TrackerHalfingCharacterView';
 import DwarfCharacterView from './DwarfView/DwarfCharacterView';
+import DruidCharacterView from './DruidView/DruidCharacterView';
+import ElfRuneMasterCharacterView from './ElfRuneMasterView/ElfRuneMasterCharacterView';
+import DwarfRockWhispererCharacterView from './DwarfRockWhispererView/DwarfRockWhispererCharacterView';
+import HalfingBardCharacterView from './HalfingBardView/HalfingBardCharacterView';
+import HalfElfWayfarerCharacterView from './HalfElfWayfarerView/HalfElfWayfarerCharacterView';
 
 
 interface TabPanelProps {
@@ -111,6 +116,36 @@ export default function TabbedCharactersView() {
         <Typography variant='h5'>גמד שומר-מעוז</Typography>
         <Divider />
         <DwarfCharacterView />
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={7}>
+        <Typography variant='h5'>דרואיד</Typography>
+        <Divider />
+        <DruidCharacterView />
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={8}>
+        <Typography variant='h5'>פלאדין</Typography>
+        <Divider />
+        <DruidCharacterView />
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={9}>
+        <Typography variant='h5'>אלף אומן-רונות</Typography>
+        <Divider />
+        <ElfRuneMasterCharacterView />
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={10}>
+        <Typography variant='h5'>בן-מחצית פייטן</Typography>
+        <Divider />
+        <HalfingBardCharacterView />
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={11}>
+        <Typography variant='h5'>גמד לוחש-סלעים</Typography>
+        <Divider />
+        <DwarfRockWhispererCharacterView />
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={12}>
+        <Typography variant='h5'>חצי-אלף תר-דרך</Typography>
+        <Divider />
+        <HalfElfWayfarerCharacterView />
       </CustomTabPanel>
 
 
