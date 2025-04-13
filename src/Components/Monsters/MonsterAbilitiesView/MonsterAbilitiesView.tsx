@@ -74,7 +74,6 @@ const abilities = [
 export default function MonsterAbilitiesView() {
   return (
     <Box dir="rtl" sx={{ textAlign: 'right', padding: 2 }}>
-     
       {abilities.map((ability, index) => (
         <Accordion key={index}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
