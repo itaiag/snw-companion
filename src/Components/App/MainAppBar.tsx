@@ -24,7 +24,7 @@ interface Props {
 }
 
 const drawerWidth = 240;
-const navItems = ['בית', 'מפלצות', 'קסמים', 'אוצר', 'ציוד','דמויות', 'קוביות','קרב', 'אודות'];
+const navItems = ['בית', 'מפלצות', 'קסמים', 'אוצר', 'ציוד','דמויות','תכונות', 'קוביות','קרב', 'אודות'];
 
 export default function DrawerAppBar(props: Props) {
     const { window } = props;
@@ -61,6 +61,9 @@ export default function DrawerAppBar(props: Props) {
                 break;    
             case 'דמויות':
                 navigate('/characters');
+                break;
+            case 'תכונות':
+                navigate('/abilityScores');
                 break;
             case 'קוביות':
                 navigate('/roller');
