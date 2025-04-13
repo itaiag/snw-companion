@@ -62,6 +62,10 @@ export default function TreasureCalcView() {
                         </Typography>
                         <Divider />
                     </Box>
+                    <Box className="small-image-box" sx={{alignSelf: 'center'}}>
+                        <img className="image" src={`${process.env.PUBLIC_URL}/images/treasure.png`} alt="treasure" />
+                    </Box>
+
                     <Box component="span" display="block">
                         <Typography variant='body1' >
                             האוצר נקבע באופן אקראי בהתאם לתיאור בחוברת למנחה עמוד 64
