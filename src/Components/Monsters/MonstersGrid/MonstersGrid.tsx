@@ -21,9 +21,9 @@ export default function MonsterGrid({type} : {type: string}) {
         let idCounter = 0;
         let monsterRows: Array<any> = [];
         monstersData.forEach(monster => { 
-            if (monster['מקור'] === type) {
+            // if (monster['מקור'] === type) {
                 monsterRows.push({ id: idCounter++, name: monster.שם, difficulty:monster['דירוג קושי'] })
-            }
+            // }
         });
         return monsterRows;
 
@@ -34,7 +34,7 @@ export default function MonsterGrid({type} : {type: string}) {
     };
 
     return (
-        <Box className="main-box" style={{ height: '3900px' }}>
+        <Box className="main-box" style={{ height: '2750px' }}>
             <DataGrid
                 rows={getMonsters()}
                 columns={columns}
@@ -45,7 +45,7 @@ export default function MonsterGrid({type} : {type: string}) {
                         },
                     },
                     pagination: {
-                        paginationModel: { page: 0, pageSize: 100 },
+                        paginationModel: { page: 0, pageSize: 50 },
                     },
                 }}
                 pageSizeOptions={[10, 20, 50, 100]}

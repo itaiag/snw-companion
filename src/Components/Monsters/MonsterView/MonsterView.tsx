@@ -57,6 +57,7 @@ const MonsterView: React.FC = () => {
         <Typography mt={1}>דירוג קושי: {monster['דירוג קושי']}</Typography>
         <Typography mt={1}>נקודות נסיון: {monster['נקודות נסיון']}</Typography>
         <Typography mt={1}>מיוחד: {monster['מיוחד']}</Typography>
+        <Typography mt={1}>מקור: {monster['מקור']}</Typography>
         <Typography mt={1}>עמוד: {monster['עמוד']}</Typography>
         <Typography mt={1}>נקודות פגיעה מחושבות:&nbsp;
           <Typography component={"span"} fontWeight="bold" mt={1}>

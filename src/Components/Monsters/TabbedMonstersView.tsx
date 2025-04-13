@@ -4,6 +4,7 @@ import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import MonsterGrid from './MonstersGrid/MonstersGrid';
 import { Divider, Typography } from '@mui/material';
+import MonsterAbilitiesView from './MonsterAbilitiesView/MonsterAbilitiesView';
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -46,25 +47,19 @@ export default function TabbedMonstersView() {
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-          <Tab label="מתחיל" {...a11yProps(0)} />
-          <Tab label="מתקדם" {...a11yProps(1)} />
-          <Tab label="נוספות" {...a11yProps(2)} />
+          <Tab label="רשימת מפלצות" {...a11yProps(0)} />
+          <Tab label="יכולת מפלצות" {...a11yProps(2)} />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
-      <Typography variant='h5'>מפלצות למנחה המתחילה</Typography>
+      <Typography variant='h5'>רשימת מפלצות</Typography>
         <Divider />
         <MonsterGrid type='מתחיל' />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
-        <Typography variant='h5'>מפלצות למנחה המתקדמת</Typography>
+        <Typography variant='h5'>יכולות מיוחדות של מפלצות</Typography>
         <Divider />
-        <MonsterGrid  type='מתקדם'/>
-      </CustomTabPanel>
-      <CustomTabPanel value={value} index={2}>
-      <Typography variant='h5'>מפלצות נוספות</Typography>
-        <Divider />
-        <MonsterGrid  type='נוספות'/>
+        <MonsterAbilitiesView />
       </CustomTabPanel>
     </Box>
   );
