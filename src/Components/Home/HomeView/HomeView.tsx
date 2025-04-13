@@ -19,7 +19,7 @@ const HomeView: React.FC = () => {
         האתר מכיל טבלאות, מחשבונים וכלי עזר נוספים שמסייעים לתהליך הנחיה שוטף יותר. הוא כולל רשימות של מפלצות, טבלאות חפצים קסומים ויקרי ערך ומחשבון לחישוב אקראי של אוצרות.
         </Box>
       </Typography>
-      <img className='image' src={`${process.env.PUBLIC_URL}/images/home.jpg`} alt="Home Background" />
+      <img className='image' src={`${process.env.PUBLIC_URL}/images/home.png`} alt="Home Background" />
     </Box>
 
   );
