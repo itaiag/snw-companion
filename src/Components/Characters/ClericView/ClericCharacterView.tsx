@@ -3,6 +3,7 @@ import CharacterProgressionTable from '../CharacterProgressionTable';
 import SavingThrowsTable from '../SavingThrowsTable';
 import CharacterTable from '../CharactersTable';
 import TurnUndeadTable from './TurnUndeadTable';
+import SpellCastingProgressionTable from '../SpellCastingProgressionTable';
 
 
 export default function ClericCharacterView() {
@@ -28,6 +29,9 @@ export default function ClericCharacterView() {
             <SavingThrowsTable characterClass={characterType} />
             <Typography variant='h6' sx={{ p: 3 }}>גירוש אל-מתים</Typography>
             <TurnUndeadTable />
+            <Typography variant='h6' sx={{ p: 3 }}>הטלת לחשים</Typography>
+            <SpellCastingProgressionTable characterClass={characterType} />
+            
         </Box>
         
     );

@@ -2,6 +2,7 @@ import { Box, Typography } from '@mui/material';
 import CharacterProgressionTable from '../CharacterProgressionTable';
 import SavingThrowsTable from '../SavingThrowsTable';
 import CharacterTable from '../CharactersTable';
+import SpellCastingProgressionTable from '../SpellCastingProgressionTable';
 
 
 
@@ -23,6 +24,9 @@ export default function ElfCharacterView() {
             <CharacterProgressionTable characterClass={characterType} />
             <Typography variant='h6' sx={{ p: 3 }}>גלגולי הצלה</Typography>
             <SavingThrowsTable characterClass={characterType} />
+            <Typography variant='h6' sx={{ p: 3 }}>הטלת קסמים</Typography>
+            <SpellCastingProgressionTable characterClass={characterType} />
+            
             
         </Box>
         

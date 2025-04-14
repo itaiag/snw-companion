@@ -11,7 +11,7 @@ import { savingThrowsData } from '../../data/savingThrowsData';
 export default function TreasureTable({ characterClass }: { characterClass: string }) {
   return (
     <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 100 }} aria-label="simple table">
+      <Table sx={{ minWidth: 100 }} aria-label="saving throws table">
         <TableHead>
           <TableRow>
             <TableCell align='right'>דרגות</TableCell>
