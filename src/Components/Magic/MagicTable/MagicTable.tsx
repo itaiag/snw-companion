@@ -6,26 +6,24 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { useNavigate } from 'react-router-dom';
 
-
-export default function MagicTable({ magics }: { magics: string[] }) {
-  
+export default function MagicTable({ magics, type, level }: { magics: string[]; type: string; level: string }) {
   const navigate = useNavigate();
 
   const handleRowClick = (magicName: string) => {
-    console.log(magicName);
-    navigate(`/magic?name=${encodeURIComponent(magicName)}`);
-};
-  
+    navigate(`/magic?name=${encodeURIComponent(magicName)}`, { state: { type, level } });
+  };
+
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 100 }} aria-label="simple table">
         <TableBody>
           {magics.map((magic) => (
             <TableRow
+              key={magic}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
               onClick={() => handleRowClick(magic)}
             >
-              <TableCell component="th" scope="row" align='right'>
+              <TableCell component="th" scope="row" align="right">
                 {magic}
               </TableCell>
             </TableRow>
