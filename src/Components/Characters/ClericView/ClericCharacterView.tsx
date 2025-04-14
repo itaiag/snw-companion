@@ -31,7 +31,9 @@ export default function ClericCharacterView() {
             <TurnUndeadTable />
             <Typography variant='h6' sx={{ p: 3 }}>הטלת לחשים</Typography>
             <SpellCastingProgressionTable characterClass={characterType} />
-            
+            <Typography variant="body2">
+             * בדרגה הראשונה הכוהן אינו מקבל לחשים באופן בסיסי, אך אם יש לו תוסף ללחשים מעוצמה ראשונה בשל תכונת החוכמה שלו, הוא יוכל להטיל לחשים כבר בדרגה זו.
+            </Typography>
         </Box>
         
     );
