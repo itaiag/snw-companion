@@ -63,7 +63,7 @@ export default function TreasureCalcView() {
                         <Divider />
                     </Box>
                     <Box className="small-image-box" sx={{alignSelf: 'center'}}>
-                        <img className="image" src={`${process.env.PUBLIC_URL}/images/treasure.png`} alt="treasure" />
+                        <img className="image" src={`${process.env.PUBLIC_URL}/images/treasure-small.png`} alt="treasure" />
                     </Box>
 
                     <Box component="span" display="block">

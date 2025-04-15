@@ -42,7 +42,7 @@ export default function BattleView() {
             <Typography>• תקיפת דמות שרועה: בקפא"פ – +2 לגלגול התקפה, בטווח – -2.</Typography>
 
             <Box className="small-image-box">
-                <img className="image" src={`${process.env.PUBLIC_URL}/images/battle.png`} alt="battle" />
+                <img className="image" src={`${process.env.PUBLIC_URL}/images/battle-small.png`} alt="battle" />
             </Box>
         </Box>
     );

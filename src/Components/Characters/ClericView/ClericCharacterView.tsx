@@ -18,7 +18,7 @@ export default function ClericCharacterView() {
                 <Typography>הכוהנים נוטים לשרת בתפקידי תמיכה במהלך הקרב: הם עוזרים למתקיפים בחזית, אבל אם עולה הצורך, הם יכולים גם לעמוד כתף אל כתף לצד הלוחם.</Typography>
             </Box>
             <Box className="small-image-box">
-                <img className="image" src={`${process.env.PUBLIC_URL}/images/cleric.png`} alt="cleric" />
+                <img className="image" src={`${process.env.PUBLIC_URL}/images/cleric-small.png`} alt="cleric" />
             </Box>
 
             <Typography variant='h6' sx={{ p: 3 }}>תכונות דמות</Typography>

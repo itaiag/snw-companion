@@ -15,7 +15,7 @@ export default function DwarfCharacterView() {
                 <Typography>הגמדים הם גזע קשוח וקשה עורף של כורי זהב ומתכות. גובהם נמוך - כמטר ושלושים סנטימטרים - והם המתהדרים בזקנים ארוכים ושופעים, אותם הם קולעים לתמות בסגנונות שונים המעידים על השיוך השבטי שלהם</Typography>
             </Box>
             <Box className="small-image-box">
-                <img className="image" src={`${process.env.PUBLIC_URL}/images/dwarf.png`} alt="dwarf" />
+                <img className="image" src={`${process.env.PUBLIC_URL}/images/dwarf-small.png`} alt="dwarf" />
             </Box>
             <Typography variant='h6' sx={{ p: 3 }}>תכונות דמות</Typography>
             <CharacterTable characterClass={characterType} />
