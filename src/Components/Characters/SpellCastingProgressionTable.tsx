@@ -12,8 +12,8 @@ export default function SpellCastingProgressionTable({ characterClass }: { chara
 
 
   return (
-    <TableContainer component={Paper} className='main-box'>
-      <Table sx={{ minWidth: 100 }} aria-label="spell casting progression table">
+    <TableContainer component={Paper} className='main-box' sx={{ maxHeight: 500, maxWidth:1000 }} >
+      <Table stickyHeader sx={{ minWidth: 100 }} aria-label="spell casting progression table">
         <TableHead>
           <TableRow>
             <TableCell align='center'>דרגה</TableCell>

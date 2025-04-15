@@ -11,8 +11,8 @@ import { trackerHalfingSkillsData } from '../../../data/trackerHalfingSkillsData
 export default function TrackerHalfingSkillsTable() {
 
     return (
-        <TableContainer component={Paper}>
-            <Table sx={{ minWidth: 100 }} aria-label="simple table">
+        <TableContainer component={Paper} sx={{ maxHeight: 500, maxWidth:1000 }}>
+            <Table stickyHeader sx={{ minWidth: 100 }} aria-label="simple table">
                 <TableHead>
                     <TableRow>
                         <TableCell align='right'>דרגה</TableCell>                        
