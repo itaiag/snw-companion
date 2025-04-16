@@ -5,7 +5,10 @@ import Select, { SelectChangeEvent } from '@mui/material/Select';
 import { magicsData } from '../../../data/magicsData';
 import MagicTable from '../MagicTable/MagicTable';
 
-export default function MagicTableView({ type, initialLevel }: { type: string; initialLevel: string }) {
+
+type CharacterType = 'כוהן' | 'קוסם' | 'פלאדין' | 'דרואיד' | 'לוחש-סלעים';
+
+export default function MagicTableView({ type, initialLevel }: { type: CharacterType; initialLevel: string }) {
   const [level, setLevel] = React.useState(initialLevel);
   const [magicList, setMagicList] = useState<null | string[]>();
 
@@ -14,7 +17,7 @@ export default function MagicTableView({ type, initialLevel }: { type: string; i
     const selectedLevel = event ? event.target.value : initialLevel;
     setLevel(selectedLevel);
     const magicListToShow: Array<string> = magicsData
-      .filter((m) => m.סוג === type)
+      .filter((m) => m[type] === "TRUE")
       .filter((m) => m.עוצמה === parseInt(selectedLevel))
       .map((m) => m.שם);
     setMagicList(magicListToShow);
@@ -46,7 +49,11 @@ export default function MagicTableView({ type, initialLevel }: { type: string; i
           >
             <MenuItem value={1}>עוצמה ראשונה</MenuItem>
             <MenuItem value={2}>עוצמה שנייה</MenuItem>
-            {type !== 'כוהן' && <MenuItem value={3}>עוצמה שלישית</MenuItem>}
+            {type !== 'כוהן' &&
+             type !== 'פלאדין' &&
+             type !== 'דרואיד' &&
+             type !== 'לוחש-סלעים' &&
+               <MenuItem value={3}>עוצמה שלישית</MenuItem>}
           </Select>
         </FormControl>
       </Box>

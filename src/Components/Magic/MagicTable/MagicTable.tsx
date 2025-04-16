@@ -15,7 +15,7 @@ export default function MagicTable({ magics, type, level }: { magics: string[]; 
 
   return (
     <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 100 }} aria-label="simple table">
+      <Table sx={{ minWidth: 100 }} aria-label="spells table">
         <TableBody>
           {magics.map((magic) => (
             <TableRow

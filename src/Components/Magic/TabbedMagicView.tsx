@@ -41,7 +41,12 @@ export default function TabbedMagicView() {
   const location = useLocation();
   const { type: initialType, level: initialLevel } = location.state || { type: 'כוהן', level: '1' };
 
-  const [value, setValue] = React.useState(initialType === 'כוהן' ? 0 : 1);
+  const [value, setValue] = React.useState(
+    initialType === 'כוהן' ? 0 :
+    initialType === 'קוסם' ? 1 :
+    initialType === 'פלאדין' ? 2 :
+    initialType === 'דרואיד' ? 3 :
+    4);
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
@@ -53,6 +58,9 @@ export default function TabbedMagicView() {
         <Tabs value={value} onChange={handleChange} aria-label="magic tabs">
           <Tab label="כוהן" {...a11yProps(0)} />
           <Tab label="קוסם" {...a11yProps(1)} />
+          <Tab label="פלאדין" {...a11yProps(2)} />
+          <Tab label="דרואיד" {...a11yProps(3)} />
+          <Tab label="לוחש-סלעים" {...a11yProps(3)} />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
@@ -61,10 +69,26 @@ export default function TabbedMagicView() {
         <MagicTableView type="כוהן" initialLevel={initialLevel || '1'} />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
-        <Typography variant="h5">קסמי קוסם</Typography>
+        <Typography variant="h5">לחשי קוסם, אלף קשת ואלף אומן רונות</Typography>
         <Divider />
         <MagicTableView type="קוסם" initialLevel={initialLevel || '1'} />
       </CustomTabPanel>
+      <CustomTabPanel value={value} index={2}>
+        <Typography variant="h5">לחשי פלאדין</Typography>
+        <Divider />
+        <MagicTableView type="פלאדין" initialLevel={initialLevel || '1'} />
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={3}>
+        <Typography variant="h5">לחשי דרואיד</Typography>
+        <Divider />
+        <MagicTableView type="דרואיד" initialLevel={initialLevel || '1'} />
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={4}>
+        <Typography variant="h5">לחשי לוחש-סלעים</Typography>
+        <Divider />
+        <MagicTableView type="לוחש-סלעים" initialLevel={initialLevel || '1'} />
+      </CustomTabPanel>
+
     </Box>
   );
 }
