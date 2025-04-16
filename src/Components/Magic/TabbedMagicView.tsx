@@ -55,7 +55,13 @@ export default function TabbedMagicView() {
   return (
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Tabs value={value} onChange={handleChange} aria-label="magic tabs">
+        <Tabs 
+          value={value} 
+          onChange={handleChange} 
+          aria-label="magic tabs"
+          variant="scrollable"
+          scrollButtons="auto"
+        >
           <Tab label="כוהן" {...a11yProps(0)} />
           <Tab label="קוסם" {...a11yProps(1)} />
           <Tab label="פלאדין" {...a11yProps(2)} />
