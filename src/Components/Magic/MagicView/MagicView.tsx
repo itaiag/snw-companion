@@ -14,7 +14,7 @@ const MagicView: React.FC = () => {
   const magic = magicsData.find((m) => m['שם'] === magicName);
   const navigate = useNavigate();
 
-  const { type, level } = location.state || { type: 'כוהן', level: '1' }; // Default to "כוהן" and level 1
+  const { type, level } = location.state || { type: 'קוסם', level: '1' }; // Default to "כוהן" and level 1
 
   if (!magic) {
     return <div>Magic not found</div>;

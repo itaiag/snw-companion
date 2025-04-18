@@ -42,8 +42,8 @@ export default function TabbedMagicView() {
   const { type: initialType, level: initialLevel } = location.state || { type: 'כוהן', level: '1' };
 
   const [value, setValue] = React.useState(
-    initialType === 'כוהן' ? 0 :
-    initialType === 'קוסם' ? 1 :
+    initialType === 'קוסם' ? 0 :
+    initialType === 'כוהן' ? 1 :
     initialType === 'פלאדין' ? 2 :
     initialType === 'דרואיד' ? 3 :
     4);
@@ -62,22 +62,22 @@ export default function TabbedMagicView() {
           variant="scrollable"
           scrollButtons="auto"
         >
-          <Tab label="כוהן" {...a11yProps(0)} />
-          <Tab label="קוסם" {...a11yProps(1)} />
+          <Tab label="קוסם" {...a11yProps(0)} />
+          <Tab label="כוהן" {...a11yProps(1)} />
           <Tab label="פלאדין" {...a11yProps(2)} />
           <Tab label="דרואיד" {...a11yProps(3)} />
-          <Tab label="לוחש-סלעים" {...a11yProps(3)} />
+          <Tab label="לוחש-סלעים" {...a11yProps(4)} />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
-        <Typography variant="h5">לחשי כוהן</Typography>
-        <Divider />
-        <MagicTableView type="כוהן" initialLevel={initialLevel || '1'} />
-      </CustomTabPanel>
-      <CustomTabPanel value={value} index={1}>
         <Typography variant="h5">לחשי קוסם, אלף קשת ואלף אומן רונות</Typography>
         <Divider />
         <MagicTableView type="קוסם" initialLevel={initialLevel || '1'} />
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={1}>
+        <Typography variant="h5">לחשי כוהן</Typography>
+        <Divider />
+        <MagicTableView type="כוהן" initialLevel={initialLevel || '1'} />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
         <Typography variant="h5">לחשי פלאדין</Typography>
